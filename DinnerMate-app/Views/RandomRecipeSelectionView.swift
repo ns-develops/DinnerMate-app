@@ -20,11 +20,11 @@ struct RandomRecipeSelectionView: View {
                 .font(.headline)
                 .padding()
             
-            // Fyrkant för "Any meal today"
+            
             ZStack {
                 RoundedRectangle(cornerRadius: 25)
-                    .fill(Color.purple.opacity(0.4)) // Mörkare lila nyans
-                    .frame(height: 150) // Större fyrkant
+                    .fill(Color.purple.opacity(0.4))
+                    .frame(height: 150)
                     .shadow(radius: 5)
                 
                 Button(action: {
@@ -33,7 +33,7 @@ struct RandomRecipeSelectionView: View {
                     }
                 }) {
                     Text("Any meal today")
-                        .foregroundColor(.white) // Texten blir vit för denna knapp
+                        .foregroundColor(.white)
                         .fontWeight(.bold)
                         .padding()
                         .frame(maxWidth: .infinity)
@@ -42,11 +42,11 @@ struct RandomRecipeSelectionView: View {
             .padding(.horizontal)
             .padding(.top, 20)
             
-            // Fyrkant för "From category"
+            
             ZStack {
                 RoundedRectangle(cornerRadius: 25)
-                    .fill(Color.purple.opacity(0.4)) // Mörkare lila nyans
-                    .frame(height: 150) // Större fyrkant
+                    .fill(Color.purple.opacity(0.4))
+                    .frame(height: 150)
                     .shadow(radius: 5)
                 
                 VStack {
@@ -67,7 +67,7 @@ struct RandomRecipeSelectionView: View {
                         }
                     }) {
                         Text("From category")
-                            .foregroundColor(.white) // Texten blir vit för denna knapp
+                            .foregroundColor(.white)
                             .fontWeight(.bold)
                             .padding()
                             .frame(maxWidth: .infinity)
@@ -77,11 +77,11 @@ struct RandomRecipeSelectionView: View {
             .padding(.horizontal)
             .padding(.top, 10)
             
-            // Fyrkant för "Choose from your ingredients"
+           
             ZStack {
                 RoundedRectangle(cornerRadius: 25)
-                    .fill(Color.purple.opacity(0.4)) // Mörkare lila nyans
-                    .frame(height: 150) // Större fyrkant
+                    .fill(Color.purple.opacity(0.4))
+                    .frame(height: 150)
                     .shadow(radius: 5)
                 
                 VStack {
@@ -102,7 +102,7 @@ struct RandomRecipeSelectionView: View {
                         }
                     }) {
                         Text("Choose from your ingredients")
-                            .foregroundColor(.white) // Texten blir vit för denna knapp
+                            .foregroundColor(.white) 
                             .fontWeight(.bold)
                             .padding()
                             .frame(maxWidth: .infinity)
