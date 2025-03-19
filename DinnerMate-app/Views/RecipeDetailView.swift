@@ -27,7 +27,7 @@ struct RecipeDetailView: View {
             
             Spacer()
         }
-        .navigationBarTitle("Recept Detaljer", displayMode: .inline)
+        .navigationBarTitle("Recipe details", displayMode: .inline)
     }
 }
 

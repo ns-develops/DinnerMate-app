@@ -18,7 +18,7 @@ struct RandomRecipeView: View {
                 .fontWeight(.bold)
                 .padding()
             
-            Text("Kategori: \(recipe.category)")
+            Text("Category: \(recipe.category)")
                 .font(.title2)
                 .padding(.bottom)
             
@@ -29,7 +29,7 @@ struct RandomRecipeView: View {
             
             Spacer()
         }
-        .navigationBarTitle("Slumpat Recept", displayMode: .inline)
+        .navigationBarTitle("Recipe", displayMode: .inline)
         .padding()
     }
 }

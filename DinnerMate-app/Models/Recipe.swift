@@ -9,7 +9,7 @@
 import Foundation
 
 struct Recipe: Identifiable {
-    var id = UUID()  // Unik identifierare
+    var id = UUID() 
     var name: String
     var category: String
     var description: String

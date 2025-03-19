@@ -21,9 +21,9 @@ struct RecipeListView: View {
                     }
                 }
                 
-                // Knapp för att navigera till RandomRecipeSelectionView
+                
                 NavigationLink(destination: RandomRecipeSelectionView(viewModel: viewModel)) {
-                    Text("Slumpa ett recept")
+                    Text("Pick Dinner")
                         .font(.title2)
                         .padding()
                         .background(Color.blue)
@@ -32,8 +32,8 @@ struct RecipeListView: View {
                 }
                 .padding()
             }
-            .navigationBarTitle("Recept Lista")
-            .navigationBarItems(trailing: NavigationLink("Lägg till", destination: AddRecipeView(viewModel: viewModel)))
+            .navigationBarTitle("Recipes")
+            .navigationBarItems(trailing: NavigationLink("Add Recipe", destination: AddRecipeView(viewModel: viewModel)))
         }
     }
 }
