@@ -5,24 +5,52 @@
 //  Created by Natalie S on 2025-03-19.
 //
 
-// Views/RecipeListView.swift
+
 
 import SwiftUI
 
 struct RecipeListView: View {
     
     @ObservedObject var viewModel: RecipeViewModel
+    @State private var randomRecipe: Recipe?
     
     var body: some View {
         NavigationView {
-            List(viewModel.recipes) { recipe in
-                NavigationLink(destination: RecipeDetailView(recipe: recipe)) {
-                    Text(recipe.name)
-                        .font(.headline)
+            VStack {
+                List(viewModel.recipes) { recipe in
+                    NavigationLink(destination: RecipeDetailView(recipe: recipe)) {
+                        Text(recipe.name)
+                            .font(.headline)
+                    }
+                }
+                
+      
+                Button(action: {
+                    if let randomRecipe = viewModel.getRandomRecipe() {
+                        self.randomRecipe = randomRecipe 
+                    }
+                }) {
+                    Text("Do you want me to choose what to eat?")
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                .padding()
+
+                if let randomRecipe = randomRecipe {
+                    NavigationLink(destination: RandomRecipeView(recipe: randomRecipe)) {
+                        Text("Todays Dinner")
+                            .padding()
+                            .background(Color.green)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                    .padding()
                 }
             }
-            .navigationBarTitle("Recept Lista")
-            .navigationBarItems(trailing: NavigationLink("Lägg till", destination: AddRecipeView(viewModel: viewModel)))
+            .navigationBarTitle("Recipe List")
+            .navigationBarItems(trailing: NavigationLink("Add", destination: AddRecipeView(viewModel: viewModel)))
         }
     }
 }

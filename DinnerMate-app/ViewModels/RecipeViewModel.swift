@@ -6,15 +6,23 @@
 //
 
 
+
 import Foundation
 
 class RecipeViewModel: ObservableObject {
     
     @Published var recipes: [Recipe] = []
     
-    // Lägg till ett nytt recept
+   
     func addRecipe(name: String, category: String, description: String) {
         let newRecipe = Recipe(name: name, category: category, description: description)
         recipes.append(newRecipe)
+    }
+    
+  
+    func getRandomRecipe() -> Recipe? {
+        guard !recipes.isEmpty else { return nil }
+        let randomIndex = Int.random(in: 0..<recipes.count)
+        return recipes[randomIndex]
     }
 }

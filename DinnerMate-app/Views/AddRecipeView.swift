@@ -16,15 +16,15 @@ struct AddRecipeView: View {
     
     var body: some View {
         VStack {
-            TextField("Recept namn", text: $name)
+            TextField("Recipe", text: $name)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
-            TextField("Kategori (ex. meat, vegetarian)", text: $category)
+            TextField("Add category", text: $category)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
-            // Använd TextEditor för beskrivning
+          
             TextEditor(text: $description)
                 .frame(height: 200)
                 .padding()
@@ -44,7 +44,7 @@ struct AddRecipeView: View {
                     description = ""  
                 }
             }) {
-                Text("Lägg till recept")
+                Text("Add Recipe")
                     .padding()
                     .background(Color.green)
                     .foregroundColor(.white)
@@ -54,7 +54,7 @@ struct AddRecipeView: View {
             
             Spacer()
         }
-        .navigationBarTitle("Lägg till Recept")
+        .navigationBarTitle("Add Recipe")
         .padding()
     }
 }
