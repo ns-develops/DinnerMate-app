@@ -50,7 +50,7 @@ struct RandomRecipeSelectionView: View {
                     .shadow(radius: 5)
                 
                 VStack {
-                    TextField("From category (t.ex. Vegan)", text: $categoryInput)
+                    TextField("From category (t.ex. vegan)", text: $categoryInput)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding(.horizontal)
                         .frame(maxWidth: .infinity)
