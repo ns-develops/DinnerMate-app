@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		7048142F2D8B4A5300DBB333 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 704814162D8B4A5000DBB333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7048141D2D8B4A5000DBB333;
+			remoteInfo = "DinnerMate-app";
+		};
+		704814392D8B4A5300DBB333 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 704814162D8B4A5000DBB333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7048141D2D8B4A5000DBB333;
+			remoteInfo = "DinnerMate-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7048141E2D8B4A5000DBB333 /* DinnerMate-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DinnerMate-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7048142E2D8B4A5300DBB333 /* DinnerMate-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DinnerMate-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		704814382D8B4A5300DBB333 /* DinnerMate-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DinnerMate-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		704814202D8B4A5000DBB333 /* DinnerMate-app */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "DinnerMate-app";
+			sourceTree = "<group>";
+		};
+		704814312D8B4A5300DBB333 /* DinnerMate-appTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "DinnerMate-appTests";
+			sourceTree = "<group>";
+		};
+		7048143B2D8B4A5300DBB333 /* DinnerMate-appUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "DinnerMate-appUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7048141B2D8B4A5000DBB333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7048142B2D8B4A5300DBB333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		704814352D8B4A5300DBB333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		704814152D8B4A5000DBB333 = {
+			isa = PBXGroup;
+			children = (
+				704814202D8B4A5000DBB333 /* DinnerMate-app */,
+				704814312D8B4A5300DBB333 /* DinnerMate-appTests */,
+				7048143B2D8B4A5300DBB333 /* DinnerMate-appUITests */,
+				7048141F2D8B4A5000DBB333 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7048141F2D8B4A5000DBB333 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7048141E2D8B4A5000DBB333 /* DinnerMate-app.app */,
+				7048142E2D8B4A5300DBB333 /* DinnerMate-appTests.xctest */,
+				704814382D8B4A5300DBB333 /* DinnerMate-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7048141D2D8B4A5000DBB333 /* DinnerMate-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 704814422D8B4A5300DBB333 /* Build configuration list for PBXNativeTarget "DinnerMate-app" */;
+			buildPhases = (
+				7048141A2D8B4A5000DBB333 /* Sources */,
+				7048141B2D8B4A5000DBB333 /* Frameworks */,
+				7048141C2D8B4A5000DBB333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				704814202D8B4A5000DBB333 /* DinnerMate-app */,
+			);
+			name = "DinnerMate-app";
+			packageProductDependencies = (
+			);
+			productName = "DinnerMate-app";
+			productReference = 7048141E2D8B4A5000DBB333 /* DinnerMate-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7048142D2D8B4A5300DBB333 /* DinnerMate-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 704814452D8B4A5300DBB333 /* Build configuration list for PBXNativeTarget "DinnerMate-appTests" */;
+			buildPhases = (
+				7048142A2D8B4A5300DBB333 /* Sources */,
+				7048142B2D8B4A5300DBB333 /* Frameworks */,
+				7048142C2D8B4A5300DBB333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				704814302D8B4A5300DBB333 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				704814312D8B4A5300DBB333 /* DinnerMate-appTests */,
+			);
+			name = "DinnerMate-appTests";
+			packageProductDependencies = (
+			);
+			productName = "DinnerMate-appTests";
+			productReference = 7048142E2D8B4A5300DBB333 /* DinnerMate-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		704814372D8B4A5300DBB333 /* DinnerMate-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 704814482D8B4A5300DBB333 /* Build configuration list for PBXNativeTarget "DinnerMate-appUITests" */;
+			buildPhases = (
+				704814342D8B4A5300DBB333 /* Sources */,
+				704814352D8B4A5300DBB333 /* Frameworks */,
+				704814362D8B4A5300DBB333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7048143A2D8B4A5300DBB333 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7048143B2D8B4A5300DBB333 /* DinnerMate-appUITests */,
+			);
+			name = "DinnerMate-appUITests";
+			packageProductDependencies = (
+			);
+			productName = "DinnerMate-appUITests";
+			productReference = 704814382D8B4A5300DBB333 /* DinnerMate-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		704814162D8B4A5000DBB333 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					7048141D2D8B4A5000DBB333 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					7048142D2D8B4A5300DBB333 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 7048141D2D8B4A5000DBB333;
+					};
+					704814372D8B4A5300DBB333 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 7048141D2D8B4A5000DBB333;
+					};
+				};
+			};
+			buildConfigurationList = 704814192D8B4A5000DBB333 /* Build configuration list for PBXProject "DinnerMate-app" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 704814152D8B4A5000DBB333;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7048141F2D8B4A5000DBB333 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7048141D2D8B4A5000DBB333 /* DinnerMate-app */,
+				7048142D2D8B4A5300DBB333 /* DinnerMate-appTests */,
+				704814372D8B4A5300DBB333 /* DinnerMate-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7048141C2D8B4A5000DBB333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7048142C2D8B4A5300DBB333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		704814362D8B4A5300DBB333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7048141A2D8B4A5000DBB333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7048142A2D8B4A5300DBB333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		704814342D8B4A5300DBB333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		704814302D8B4A5300DBB333 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7048141D2D8B4A5000DBB333 /* DinnerMate-app */;
+			targetProxy = 7048142F2D8B4A5300DBB333 /* PBXContainerItemProxy */;
+		};
+		7048143A2D8B4A5300DBB333 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7048141D2D8B4A5000DBB333 /* DinnerMate-app */;
+			targetProxy = 704814392D8B4A5300DBB333 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		704814402D8B4A5300DBB333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		704814412D8B4A5300DBB333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		704814432D8B4A5300DBB333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DinnerMate-app/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.DinnerMate-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		704814442D8B4A5300DBB333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DinnerMate-app/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.DinnerMate-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		704814462D8B4A5300DBB333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.DinnerMate-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DinnerMate-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DinnerMate-app";
+			};
+			name = Debug;
+		};
+		704814472D8B4A5300DBB333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.DinnerMate-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DinnerMate-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DinnerMate-app";
+			};
+			name = Release;
+		};
+		704814492D8B4A5300DBB333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.DinnerMate-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DinnerMate-app";
+			};
+			name = Debug;
+		};
+		7048144A2D8B4A5300DBB333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.DinnerMate-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DinnerMate-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		704814192D8B4A5000DBB333 /* Build configuration list for PBXProject "DinnerMate-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				704814402D8B4A5300DBB333 /* Debug */,
+				704814412D8B4A5300DBB333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		704814422D8B4A5300DBB333 /* Build configuration list for PBXNativeTarget "DinnerMate-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				704814432D8B4A5300DBB333 /* Debug */,
+				704814442D8B4A5300DBB333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		704814452D8B4A5300DBB333 /* Build configuration list for PBXNativeTarget "DinnerMate-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				704814462D8B4A5300DBB333 /* Debug */,
+				704814472D8B4A5300DBB333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		704814482D8B4A5300DBB333 /* Build configuration list for PBXNativeTarget "DinnerMate-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				704814492D8B4A5300DBB333 /* Debug */,
+				7048144A2D8B4A5300DBB333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 704814162D8B4A5000DBB333 /* Project object */;
+}
