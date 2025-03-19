@@ -5,7 +5,6 @@
 //  Created by Natalie S on 2025-03-19.
 //
 
-
 import SwiftUI
 
 struct RandomRecipeView: View {
@@ -30,7 +29,7 @@ struct RandomRecipeView: View {
             
             Spacer()
         }
-        .navigationBarTitle("Todays Dinner!", displayMode: .inline)
+        .navigationBarTitle("Slumpat Recept", displayMode: .inline)
         .padding()
     }
 }
