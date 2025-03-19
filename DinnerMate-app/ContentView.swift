@@ -5,20 +5,20 @@
 //  Created by Natalie S on 2025-03-19.
 //
 
+
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var viewModel = RecipeViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        RecipeListView(viewModel: viewModel)
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
