@@ -4,18 +4,6 @@
 //
 //  Created by Natalie S on 2025-03-19.
 //
-//
-//  AddRecipeView.swift
-//  DinnerMate-app
-//
-//  Created by Natalie S on 2025-03-19.
-//
-//
-//  AddRecipeView.swift
-//  DinnerMate-app
-//
-//  Created by Natalie S on 2025-03-19.
-//
 
 import SwiftUI
 

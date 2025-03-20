@@ -19,35 +19,35 @@ struct RecipeDetailView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 
-                // Recipe Name in a Rectangle
+               
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
-                        .fill(Color.blue.opacity(0.2))
+                        .fill(Color.yellow.opacity(0.2))
                         .frame(height: 60)
                     
                     Text(recipe.name)
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
-                        .multilineTextAlignment(.leading) // Align text to the left
+                        .multilineTextAlignment(.leading)
                         .padding()
                 }
                 .padding(.top, 20)
                 
-                // Category in a Rectangle
+         
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
-                        .fill(Color.green.opacity(0.2))
+                        .fill(Color.yellow.opacity(0.2))
                         .frame(height: 60)
                     
                     Text("Category: \(recipe.category)")
                         .font(.title2)
                         .foregroundColor(.secondary)
-                        .multilineTextAlignment(.leading) // Align text to the left
+                        .multilineTextAlignment(.leading)
                         .padding()
                 }
                 
-                // Recipe Image
+      
                 Image(systemName: "leaf.fill")
                     .resizable()
                     .scaledToFit()
@@ -56,31 +56,30 @@ struct RecipeDetailView: View {
                     .padding(.top, 15)
                     .shadow(radius: 10)
                 
-                // Recipe Description in a Rectangle
+               
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
-                        .fill(Color.yellow.opacity(0.2))
+                        .fill(Color.white.opacity(0.2))
                         .frame(height: 150)
                     
                     Text(recipe.description)
                         .font(.body)
                         .foregroundColor(.primary)
                         .padding()
-                        .multilineTextAlignment(.leading) // Align text to the left
+                        .multilineTextAlignment(.leading)
                 }
                 
                 VStack {
                     HStack {
                         // Share Recipe Button
                         Button(action: {
-                            showingShareSheet.toggle() // Show share sheet
+                            showingShareSheet.toggle()
                         }) {
                             Text("Share Recipe")
                                 .fontWeight(.bold)
                                 .padding()
                                 .frame(maxWidth: .infinity)
-                                .background(Color.blue)
-                                .foregroundColor(.white)
+                                .background(Color.pink.opacity(0.6))                           .foregroundColor(.white)
                                 .cornerRadius(10)
                         }
                         .frame(height: 50)
@@ -89,13 +88,13 @@ struct RecipeDetailView: View {
 
                         // Share on SMS Button
                         Button(action: {
-                            showingSMSComposer.toggle() // Show SMS Composer
+                            showingSMSComposer.toggle()
                         }) {
                             Text("Share on SMS")
                                 .fontWeight(.bold)
                                 .padding()
                                 .frame(maxWidth: .infinity)
-                                .background(Color.green)
+                                .background(Color.pink.opacity(0.6))
                                 .foregroundColor(.white)
                                 .cornerRadius(10)
                         }
@@ -113,10 +112,10 @@ struct RecipeDetailView: View {
         .navigationBarTitle("Receptdetaljer", displayMode: .inline)
         .background(Color(.systemGroupedBackground))
         .sheet(isPresented: $showingShareSheet) {
-            ShareSheet(activityItems: [self.recipe.name, self.recipe.description]) // Show share sheet
+            ShareSheet(activityItems: [self.recipe.name, self.recipe.description])
         }
         .sheet(isPresented: $showingSMSComposer) {
-            SMSComposerView(recipe: self.recipe) // Show SMS Composer
+            SMSComposerView(recipe: self.recipe) 
         }
     }
 }

@@ -27,7 +27,7 @@ struct RandomRecipeSelectionView: View {
                 RoundedRectangle(cornerRadius: 25)
                     .fill(Color.white.opacity(0.4))
                     .frame(height: 150)
-                    .shadow(radius: 5)
+                    .shadow(radius: 0)
                 
                 Button(action: {
                     if let randomRecipe = viewModel.getRandomRecipe() {
@@ -49,7 +49,7 @@ struct RandomRecipeSelectionView: View {
                 RoundedRectangle(cornerRadius: 25)
                     .fill(Color.white.opacity(0.4))
                     .frame(height: 150)
-                    .shadow(radius: 5)
+                    .shadow(radius: 0)
                 
                 VStack {
                     TextField("From category (t.ex. vegan)", text: $categoryInput)
@@ -84,7 +84,7 @@ struct RandomRecipeSelectionView: View {
                 RoundedRectangle(cornerRadius: 25)
                     .fill(Color.white.opacity(0.3))
                     .frame(height: 150)
-                    .shadow(radius: 5)
+                    .shadow(radius: 0)
                 
                 VStack {
                     TextField("Add ingredient (t.ex. meat, tomato)", text: $ingredientInput)
@@ -119,7 +119,7 @@ struct RandomRecipeSelectionView: View {
                 NavigationLink(destination: RandomRecipeView(recipe: randomRecipe)) {
                     Text("Todays Dinner!")
                         .padding()
-                        .background(Color.pink.opacity(0.6)) // Ljusröd bakgrund
+                        .background(Color.pink.opacity(0.6))
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
@@ -128,7 +128,7 @@ struct RandomRecipeSelectionView: View {
 
             Spacer()
         }
-        .background(Color.white.opacity(0.1)) // Bakgrundsfärgen på hela vyn, här kan du justera opaciteten
+        .background(Color.white.opacity(0.1))
         .navigationBarTitle("", displayMode: .inline)
       
     }
