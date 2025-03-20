@@ -4,6 +4,9 @@
 //
 //  Created by Natalie S on 2025-03-19.
 //
+//
+
+//
 import SwiftUI
 
 struct RandomRecipeView: View {
@@ -23,38 +26,38 @@ struct RandomRecipeView: View {
      
             ZStack {
                 RoundedRectangle(cornerRadius: 25)
-                    .fill(Color.purple.opacity(0.4))
+                    .fill(Color.white.opacity(0.5))
                     .shadow(radius: 10)
                     .padding()
 
                 VStack(spacing: 10) {
-                    // Receptnamn
+                 
                     Text(recipe.name)
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .multilineTextAlignment(.center)
                         .padding(.top)
 
-                    // Receptkategori
+                  
                     Text("Category: \(recipe.category)")
                         .font(.title2)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .multilineTextAlignment(.center)
                     
-                    // Receptbeskrivning
+              
                     ScrollView {
                         Text(recipe.description)
                             .font(.body)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .padding(.bottom)
                     }
                     .padding(.bottom)
                 }
                 .padding()
             }
-            .padding(.horizontal) 
-            .padding(.top, 20) 
+            .padding(.horizontal)
+            .padding(.top, 20)
         }
         .navigationBarTitle("Recipe", displayMode: .inline)
     }

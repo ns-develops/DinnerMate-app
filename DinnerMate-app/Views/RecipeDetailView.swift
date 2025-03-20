@@ -12,7 +12,7 @@ struct RecipeDetailView: View {
     
     var recipe: Recipe
     
-    // State för att visa delningsvyn eller SMS-komposering
+ 
     @State private var showingShareSheet = false
     @State private var showingSMSComposer = false
     
@@ -20,7 +20,7 @@ struct RecipeDetailView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 
-                // Receptnamn med stil
+           
                 Text(recipe.name)
                     .font(.largeTitle)
                     .fontWeight(.bold)
@@ -28,14 +28,13 @@ struct RecipeDetailView: View {
                     .padding(.top, 20)
                     .multilineTextAlignment(.center)
                 
-                // Receptkategori
-                Text("Kategori: \(recipe.category)")
+                
+                Text("Category: \(recipe.category)")
                     .font(.title2)
                     .foregroundColor(.secondary)
                     .padding(.top, 5)
                 
-                // Receptbild - här kan du ersätta med en verklig bild i framtiden
-                Image(systemName: "leaf.fill") // En tillfällig bild, kan bytas ut med en verklig bild från data
+                Image(systemName: "leaf.fill") // add new
                     .resizable()
                     .scaledToFit()
                     .frame(height: 250)
@@ -43,7 +42,7 @@ struct RecipeDetailView: View {
                     .padding(.top, 15)
                     .shadow(radius: 10)
                 
-                // Beskrivning
+             
                 Text(recipe.description)
                     .font(.body)
                     .foregroundColor(.primary)
@@ -52,14 +51,14 @@ struct RecipeDetailView: View {
                     .cornerRadius(15)
                     .shadow(radius: 5)
                 
-                // Knapp för att dela receptet
+        
                 VStack {
                     HStack {
-                        // Dela via andra appar
+                      
                         Button(action: {
-                            showingShareSheet.toggle() // Visa delningsvyn
+                            showingShareSheet.toggle() //
                         }) {
-                            Text("Dela Recept")
+                            Text("Share Recipe")
                                 .fontWeight(.bold)
                                 .padding()
                                 .frame(maxWidth: .infinity)
@@ -71,11 +70,11 @@ struct RecipeDetailView: View {
 
                         Spacer()
 
-                        // Dela via SMS
+                   
                         Button(action: {
-                            showingSMSComposer.toggle() // Visa SMS-komposering
+                            showingSMSComposer.toggle()
                         }) {
-                            Text("Dela via SMS")
+                            Text("Share on SMS")
                                 .fontWeight(.bold)
                                 .padding()
                                 .frame(maxWidth: .infinity)
@@ -87,7 +86,7 @@ struct RecipeDetailView: View {
                     }
                     .padding(.top, 30)
                     
-                    // Placera knapparna horisontellt på rad
+               
                     Spacer()
                 }
                 
@@ -96,12 +95,12 @@ struct RecipeDetailView: View {
             .padding(.horizontal)
         }
         .navigationBarTitle("Receptdetaljer", displayMode: .inline)
-        .background(Color(.systemGroupedBackground)) // Lägger till bakgrundsfärg
+        .background(Color(.systemGroupedBackground))
         .sheet(isPresented: $showingShareSheet) {
             ShareSheet(activityItems: [self.recipe.name, self.recipe.description]) // Visar delningsvyn
         }
         .sheet(isPresented: $showingSMSComposer) {
-            SMSComposerView(recipe: self.recipe) // Visar SMS-komposering
+            SMSComposerView(recipe: self.recipe) //
         }
     }
 }
@@ -112,7 +111,7 @@ struct RecipeDetailView_Previews: PreviewProvider {
     }
 }
 
-// SwiftUI wrapper för UIActivityViewController (för delning)
+
 struct ShareSheet: UIViewControllerRepresentable {
     var activityItems: [Any]
     
@@ -122,39 +121,39 @@ struct ShareSheet: UIViewControllerRepresentable {
     }
     
     func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {
-        // Ingen uppdatering behövs, vi skapar delningsvyn när den visas
+      
     }
 }
 
-// SwiftUI wrapper för MFMessageComposeViewController (för att skicka SMS)
+
 struct SMSComposerView: UIViewControllerRepresentable {
     var recipe: Recipe
     
     func makeUIViewController(context: Context) -> MFMessageComposeViewController {
         let composer = MFMessageComposeViewController()
         
-        // Sätt upp SMS-innehåll
-        composer.body = "Kolla på detta recept: \(recipe.name)\nKategori: \(recipe.category)\nBeskrivning: \(recipe.description)"
+       
+        composer.body = "Check this recipe: \(recipe.name)\nCategory: \(recipe.category)\nDescription: \(recipe.description)"
         
         composer.messageComposeDelegate = context.coordinator
         
-        // Kontrollera om SMS-komposering är tillgänglig
+      
         if !MFMessageComposeViewController.canSendText() {
-            // Om SMS inte kan skickas (t.ex. om simulatorn används utan SMS-funktion)
-            print("SMS-komposering är inte tillgänglig.")
+         
+            print("SMS-composer not available")
         }
         
         return composer
     }
     
     func updateUIViewController(_ uiViewController: MFMessageComposeViewController, context: Context) {
-        // Ingen uppdatering behövs, vi skapar SMS-komposering när den visas
+
     }
     
-    // Coordinator för att hantera händelser från MFMessageComposeViewController
+
     class Coordinator: NSObject, MFMessageComposeViewControllerDelegate {
         func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
-            controller.dismiss(animated: true, completion: nil) // Stäng komposeringen
+            controller.dismiss(animated: true, completion: nil)
         }
     }
     

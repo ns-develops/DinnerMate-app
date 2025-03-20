@@ -5,6 +5,7 @@
 //  Created by Natalie S on 2025-03-19.
 //
 
+
 import SwiftUI
 
 struct RecipeListView: View {
@@ -26,7 +27,7 @@ struct RecipeListView: View {
                     Text("Pick Dinner")
                         .font(.title2)
                         .padding()
-                        .background(Color.blue)
+                        .background(Color.pink.opacity(0.6))
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }

@@ -1,8 +1,9 @@
 //
-//  RandomRecipeSelectionView.swift
+//  RandomReceipeView.swift
 //  DinnerMate-app
 //
 //  Created by Natalie S on 2025-03-19.
+//
 //
 
 import SwiftUI
@@ -17,13 +18,14 @@ struct RandomRecipeSelectionView: View {
     var body: some View {
         VStack {
             Text("Choose how you want to eat today:")
-                .font(.headline)
-                .padding()
+                           .font(.system(size: 20))
+                           .fontWeight(.bold)
+                           .padding()
             
             
             ZStack {
                 RoundedRectangle(cornerRadius: 25)
-                    .fill(Color.purple.opacity(0.4))
+                    .fill(Color.white.opacity(0.4))
                     .frame(height: 150)
                     .shadow(radius: 5)
                 
@@ -33,7 +35,7 @@ struct RandomRecipeSelectionView: View {
                     }
                 }) {
                     Text("Any meal today")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .fontWeight(.bold)
                         .padding()
                         .frame(maxWidth: .infinity)
@@ -45,7 +47,7 @@ struct RandomRecipeSelectionView: View {
             
             ZStack {
                 RoundedRectangle(cornerRadius: 25)
-                    .fill(Color.purple.opacity(0.4))
+                    .fill(Color.white.opacity(0.4))
                     .frame(height: 150)
                     .shadow(radius: 5)
                 
@@ -67,7 +69,7 @@ struct RandomRecipeSelectionView: View {
                         }
                     }) {
                         Text("From category")
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .fontWeight(.bold)
                             .padding()
                             .frame(maxWidth: .infinity)
@@ -80,7 +82,7 @@ struct RandomRecipeSelectionView: View {
            
             ZStack {
                 RoundedRectangle(cornerRadius: 25)
-                    .fill(Color.purple.opacity(0.4))
+                    .fill(Color.white.opacity(0.3))
                     .frame(height: 150)
                     .shadow(radius: 5)
                 
@@ -102,7 +104,7 @@ struct RandomRecipeSelectionView: View {
                         }
                     }) {
                         Text("Choose from your ingredients")
-                            .foregroundColor(.white) 
+                            .foregroundColor(.black)
                             .fontWeight(.bold)
                             .padding()
                             .frame(maxWidth: .infinity)
@@ -112,12 +114,12 @@ struct RandomRecipeSelectionView: View {
             .padding(.horizontal)
             .padding(.top, 10)
             
-            // Visa slumpat recept
+           
             if let randomRecipe = randomRecipe {
                 NavigationLink(destination: RandomRecipeView(recipe: randomRecipe)) {
                     Text("Todays Dinner!")
                         .padding()
-                        .background(Color.green)
+                        .background(Color.pink.opacity(0.6)) // Ljusröd bakgrund
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
@@ -126,7 +128,9 @@ struct RandomRecipeSelectionView: View {
 
             Spacer()
         }
-        .navigationBarTitle("Let me know what I should eat?", displayMode: .inline)
+        .background(Color.white.opacity(0.1)) // Bakgrundsfärgen på hela vyn, här kan du justera opaciteten
+        .navigationBarTitle("", displayMode: .inline)
+      
     }
 }
 

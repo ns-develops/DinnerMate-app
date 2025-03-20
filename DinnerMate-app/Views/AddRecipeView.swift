@@ -4,6 +4,18 @@
 //
 //  Created by Natalie S on 2025-03-19.
 //
+//
+//  AddRecipeView.swift
+//  DinnerMate-app
+//
+//  Created by Natalie S on 2025-03-19.
+//
+//
+//  AddRecipeView.swift
+//  DinnerMate-app
+//
+//  Created by Natalie S on 2025-03-19.
+//
 
 import SwiftUI
 
@@ -41,12 +53,12 @@ struct AddRecipeView: View {
                     viewModel.addRecipe(name: name, category: category, description: description)
                     name = ""
                     category = ""
-                    description = ""  
+                    description = ""
                 }
             }) {
                 Text("Add Recipe")
                     .padding()
-                    .background(Color.green)
+                    .background(Color.pink.opacity(0.6))
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
@@ -58,6 +70,8 @@ struct AddRecipeView: View {
         .padding()
     }
 }
+    
+
 
 struct AddRecipeView_Previews: PreviewProvider {
     static var previews: some View {
